@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+        <h1 style="background-color: chartreuse;display: flex;justify-content: center;">Random  Image changer</h1>
+      
+        <button type ="button" onclick="displayImage()" style="border:2px solid blue;background-color: blue; width: 110px; cursor:pointer;border-radius: 15px;height:30px;color:chartreuse; margin-left:45%;">Display Image</button>
+        <div id="demo"></div>
+      <script>
+          var a = "<img src = 'http://www.homastudio.com/img/spongebob.png'>";
+var b = "<img src = 'http://www.homastudio.com/img/patrick.png'>";
+var c = "<img src = 'http://www.homastudio.com/img/squidward.png'>";
+var d= "<img src = 'http://www.homastudio.com/img/sandy.png'>";
+var e = "<img src = 'http://www.homastudio.com/img/krabs.png'>";
+var f = "<img src = 'http://www.homastudio.com/img/larry.png'>";
+var images=[a,b,c,d,e,f];
+function displayImage(){
+    var sk=Math.random();
+    sk = sk*6;
+    sk=Math.floor(sk);
+    document.getElementById("demo").innerHTML=images[sk];
+}
+      </script>
+</body>
+</html>
